@@ -16,6 +16,7 @@ app.get('/search', async (req, res) => {
 
   try {
     const response = await axios.get(url);
+    console.log(`Successfully fetched veterinary clinics for query: ${query}`);
     res.json(response.data.results);
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -36,6 +37,7 @@ app.get('/clinic', async (req, res) => {
         const response = await axios.get(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&key=${process.env.GOOGLE_PLACES_API_KEY}`, {
             headers: { 'Authorization': `Bearer ${process.env.API_KEY}` }
         });
+        console.log(`Successfully fetched details for clinic with place_id: ${placeId}`);
         res.json(response.data);
     } catch (error) {
         console.error(error);
