@@ -1,6 +1,4 @@
-# My Pet Portal
-
-The Pet Portal App allows users to manage pet profiles, track health metrics (Temperature, Pulse, and Respiration - TPR), and search for nearby veterinary clinics.
+# Vet Clinic Search 
 
 ## Menu
 
