@@ -26,7 +26,7 @@ Users can search for vet clinic by name. When they click on the particular clini
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Rosepetal2022/vet-clinic-microservice.git
-   cd mypet-portal
+   cd vet-clinic-microservice
    ```
 2. npm install
     ``` npm install ```
